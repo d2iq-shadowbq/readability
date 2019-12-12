@@ -1,4 +1,10 @@
-See http://mehuleo.github.io/readability/
+# Readability
+
+See: http://d2iq-shadowbq.github.io/readability/
+
+The bookmarklet is hosted on GH-Pages, so take a look at that branch. 
+
+## Original - Arc90
 
 This is a copy of the Readability bookmarklet from Arc90 Labs:
 
