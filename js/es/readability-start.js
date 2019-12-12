@@ -51,25 +51,9 @@ $(document).ready(function() {
 		applyChange(this.name, this.value);
 	});
 	$("#bookmarkletLink").bind("click", function(){
-		if($.browser.msie){
-			alert("Para empezar a usar Readability, click derecho y selecciona 'Agrega a favoritos...' para guardar este link en la barra de marcadores de tu navegador.");
-		}
-		else {
-			alert("Para empezar a usar Readability, arrastra este link a la barra de marcadores de tu navegador.");
-		}
+		alert("Para empezar a usar Readability, arrastra este link a la barra de marcadores de tu navegador.");
 		return false;
 	});
-
-  $('.video').fancybox({
-      zoomSpeedIn: 0,
-      zoomSpeedOut: 0,
-      overlayShow: true,
-      overlayOpacity: 0.85,
-      overlayColor: "#091824",
-      hideOnContentClick: false,
-      frameWidth: 480,
-      frameHeight: 360
-  });
 
   $('#footnote-details').fancybox({
       zoomSpeedIn: 0,

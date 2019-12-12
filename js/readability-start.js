@@ -10,14 +10,7 @@ var linkStringEnd   = "';_readability_script=document.createElement('script');_r
 
 $(document).ready(function() {
     /* Prepare content instructions for specific browsers, */
-    if($.browser.msie) {
-        $('#bookmarkletLink').html('<img src="images/badge-readability.png" width="174" height="40" alt="Readability" title="Readability" />');
-        $("#browser-instruction-placer").hide();
-        $("#browser-instruction-ie").fadeIn('100');
-        $("#bookmarkletLink").css("cursor","pointer");
-        $("#video-instruction").attr("href","#video-ie");
-    }
-    else if (iOS) {
+    if (iOS) {
         $("#browser-instruction-placer,#bookmarkletLink").hide();
         $("#browser-instruction-ios").fadeIn('100');
         $("#bookmarklet p:last-child").before('<textarea id="bookmarkletText">' + linkStringStart + "readConvertLinksToFootnotes=" + footnotes + ";readStyle='" + style + "';readSize='" + size + "';readMargin='" + margin + linkStringEnd + '</textarea>')
@@ -27,7 +20,7 @@ $(document).ready(function() {
         $("#browser-instruction").fadeIn('100');
     }
 
-    $("#footer").after('<p>' + navigator.userAgent + '</p>');
+    $("#footer").after('<p>Updated: Dec 12, 2019 - D2IQ-shadowbq </p>');
 
 	$("#bookmarkletLink").attr("href", linkStringStart + "readConvertLinksToFootnotes=" + footnotes + ";readStyle='" + style + "';readSize='" + size + "';readMargin='" + margin + linkStringEnd);
 
@@ -71,26 +64,12 @@ $(document).ready(function() {
 	});
 
 	$("#bookmarkletLink").bind("click", function(){
-		if($.browser.msie){
-			alert("To start using Readability, right-click and select 'Add To Favorites...' to save this link to your browser's bookmarks toolbar.");
-		}
-		else {
-			alert("To start using Readability, drag this link to your browser's bookmarks toolbar.");
-		}
+        alert("To start using Readability, drag this link to your browser's bookmarks toolbar.");
 		return false;
 	});
 
     /* Modal Windows */
-    $('.video').fancybox({
-        zoomSpeedIn: 0,
-        zoomSpeedOut: 0,
-        overlayShow: true,
-        overlayOpacity: 0.85,
-        overlayColor: "#091824",
-        hideOnContentClick: false,
-        frameWidth: 480,
-        frameHeight: 360
-    });
+
     $('#footnote-details').fancybox({
         zoomSpeedIn: 0,
         zoomSpeedOut: 0,
