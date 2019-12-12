@@ -2,18 +2,13 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Readability - An Arc90 Lab Experiment</title>
+  <title>Readability - Simplify your reading experience</title>
   <meta name="author" content="Arc90">
   <meta name="description" content="Readability&trade; is a simple tool that makes reading on the Web more enjoyable by removing the clutter around what you're reading.">
   <link rel="stylesheet" href="css/readability-home.css" type="text/css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="css/fancybox.css" type="text/css" media="screen" charset="utf-8">
   <link rel="icon" type="image/png" href="images/icon-readability-favicon.png">
-  <!--[if lte IE 7]>
-    <style type="text/css" media="screen">
-      #introduction, #watch-video, #header .meta { margin-top: 0; }
-      .settings-box { margin-left: 5px; width: 160px; }
-    </style>
-  <![endif]-->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
   <script src="js/readability-start.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/jquery.fancybox-1.2.6.pack.js" type="text/javascript" charset="utf-8"></script>
@@ -47,33 +42,6 @@
       <p><em>Readability</em>&trade; is a simple tool that makes reading on the Web more enjoyable by removing the clutter around what you're reading. Follow the steps below to install <em>Readability</em>&trade; in your Web browser.</p>
     </div>  <!-- End #introduction -->
 
-    <div id="watch-video">
-      <a href="#video-other" class="video" title="Installation Instructions" id="video-instruction"><img src="images/badge-video.png" width="104" height="104" alt="Installation Instructions Icon"></a>
-
-      <div id="video-ie" style="display:none;">
-        <object width="480" height="360">
-          <param name="allowfullscreen" value="true">
-          <param name="allowscriptaccess" value="always">
-          <param name="movie" value="https://vimeo.com/moogaloop.swf?clip_id=8798529&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1">
-          <embed src="https://vimeo.com/moogaloop.swf?clip_id=8798529&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="480" height="360"></embed>
-        </object>
-      </div>  <!-- End #video-ie -->
-
-      <div id="video-other" style="display:none;">
-        <object width="480" height="360">
-          <param name="allowfullscreen" value="true">
-          <param name="allowscriptaccess" value="always">
-          <param name="movie" value="https://vimeo.com/moogaloop.swf?clip_id=8798492&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1">
-          <embed src="https://vimeo.com/moogaloop.swf?clip_id=8798492&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="480" height="360"></embed>
-        </object>
-      </div>  <!-- End #video-other -->
-    </div>
-
-    <div class="meta">
-      <a href="https://www.arc90.com/" class="arc90"><img src="images/logo-arc90-large.png" width="107" height="41" alt="Arc90" title="Arc90"></a>
-
-      <p><a href="https://twitter.com/arc90" class="twitter">Follow us on Twitter &raquo;</a></p>
-    </div>  <!-- End .meta -->
   </div>  <!-- End #header -->
 
   <ol id="instructions">
@@ -83,9 +51,10 @@
         <dt>Choose a Style:</dt>
         <dd><input type="radio" name="style" value="style-newspaper" id="newspaper" checked="checked"><label for="newspaper">Newspaper</label></dd>
         <dd><input type="radio" name="style" value="style-novel" id="novel"><label for="novel">Novel</label></dd>
+        <dd><input type="radio" name="style" value="style-quicksand" id="quicksand"><label for="quicksand">Quicksand</label></dd>
         <dd><input type="radio" name="style" value="style-ebook" id="ebook"><label for="ebook">eBook</label></dd>
-        <dd><input type="radio" name="style" value="style-apertura" id="apertura"><label for="apertura" title="Powered by Typekit">Inverse</label><a href="https://typekit.com/?utm_source=readability&amp;utm_medium=affiliate&amp;utm_campaign=inverse" title="Powered by Typekit" target="_blank"><em>Powered by Typekit</em></a></dd>
-        <dd><input type="radio" name="style" value="style-athelas" id="athelas"><label for="athelas" title="Powered by Typekit">Athelas</label><a href="https://typekit.com/?utm_source=readability&amp;utm_medium=affiliate&amp;utm_campaign=athelas" title="Powered by Typekit" target="_blank"><em>Powered by Typekit</em></a></dd>
+        <dd><input type="radio" name="style" value="style-apertura" id="apertura"><label for="apertura" title="Powered by Typekit">Inverse</label></dd>
+        <dd><input type="radio" name="style" value="style-athelas" id="athelas"><label for="athelas" title="Powered by Typekit">Athelas</label></dd>
       </dl>
       <dl class="settings-box" id="size">
         <dt>Choose a Font Size:</dt>
@@ -157,20 +126,8 @@
     </div>  <!-- End #example -->
   </div>  <!-- End #article -->
 
-  <div id="footer">
+  <div id="footer" style="min-height: 90px;">
     <hr class="section">
-    <ul id="arcLinks">
-      <li><a href="https://www.arc90.com/" class="www-link"><img src="images/logo-arc90-small.png" width="66" height="26" alt="Arc90" title="Arc90"></a></li>
-      <li><a href="https://lab.arc90.com/" class="lab-link"><img src="images/logo-arc90lab-small.png" width="123" height="26" alt="Arc90 Lab" title="Arc90 Lab"></a></li>
-    </ul>
-
-    <div id="kindlingAd">
-      <a href="https://www.kindlingapp.com/" class="kindlingapp">
-        <img src="images/kindling_250px_dark_trans.png" width="250" height="50" alt="Kindling &mdash; Idea Management &amp; Collaboration" title="Kindling &mdash; Idea Management &amp; Collaboration">
-        <span>An Idea Management &amp; Collaboration Tool</span>
-      </a>
-    </div>
-
   </div>  <!-- End #footer -->
 </div>  <!-- End #container -->
 </body>

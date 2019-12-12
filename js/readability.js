@@ -6,18 +6,19 @@ var dbg = (typeof console !== 'undefined') ? function(s) {
 } : function() {};
 
 /*
- * Readability. An Arc90 Lab Experiment.
- * Website: http://lab.arc90.com/experiments/readability
- * Source:  http://code.google.com/p/arc90labs-readability
+ * Readability
+ * Website: https://d2iq-shadowbq.github.io/readability/
+ * Source:  https://github.com/d2iq-shadowbq/readability
  *
  * "Readability" is a trademark of Arc90 Inc and may not be used without explicit permission.
  *
+ * Copyright (c) 2019 - D2IQ-Shadowbq 
  * Copyright (c) 2010 Arc90 Inc
  * Readability is licensed under the Apache License, Version 2.0.
 **/
 var readability = {
-    version:                '1.7.1',
-    emailSrc:               'http://lab.arc90.com/experiments/readability/email.php',
+    version:                '1.8.0',
+    emailSrc:               'https://d2iq-shadowbq.github.io/readability/',
     iframeLoads:             0,
     convertLinksToFootnotes: false,
     reversePageScroll:       false, /* If they hold shift and hit space, scroll up */
@@ -367,13 +368,11 @@ var readability = {
         "<div id='rdb-footer-print'>Excerpted from <cite>" + document.title + "</cite><br />" + window.location.href + "</div>",
         "<div id='rdb-footer-wrapper'>",
              "<div id='rdb-footer-left'>",
-                 "<a href='http://lab.arc90.com/experiments/readability' id='readability-logo'>Readability &mdash;&nbsp;</a>",
-                 "<a href='http://www.arc90.com/' id='arc90-logo'> An Arc90 Laboratory Experiment&nbsp;</a>",
+                 "<a href='http://lab.arc90.com/experiments/readability' id='readability-logo'>&nbsp;</a>",
                  " <span id='readability-url'> http://lab.arc90.com/experiments/readability</span>",
              "</div>",
              "<div id='rdb-footer-right'>",
-                 "<a href='http://www.twitter.com/arc90' class='footer-twitterLink'>Follow us on Twitter &raquo;</a>",
-                 "<span class='version'>Readability version " + readability.version + "</span>",
+                 "<span id='readability-version'>Readability version " + readability.version + "</span>",
              "</div>",
         "</div>"].join('');
 
@@ -548,7 +547,8 @@ var readability = {
         var rdbHead      = document.getElementsByTagName('head')[0];
         var rdbTKScript  = document.createElement('script');
         var rdbTKCode    = null;
-
+        /*
+        Not Needed CRUFT!! 
         var rdbTKLink    = document.createElement('a');
             rdbTKLink.setAttribute('class','rdbTK-powered');
             rdbTKLink.setAttribute('title','Fonts by Typekit');
@@ -570,6 +570,7 @@ var readability = {
             rdbTKLink.setAttribute('id','rdb-inverse');
             document.getElementById("rdb-footer-right").appendChild(rdbTKLink);
         }
+        */
 
         /**
          * Setting new script tag attributes to pull Typekits libraries

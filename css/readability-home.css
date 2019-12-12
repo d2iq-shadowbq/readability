@@ -1,3 +1,45 @@
+/* More Fonts */
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * quicksand:
+ *   - http://typekit.com/eulas/00000000000000003b9b3a21
+ *   - http://typekit.com/eulas/00000000000000003b9b3a24
+ *   - http://typekit.com/eulas/00000000000000003b9b3a22
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2019-12-12 18:28:11 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=kuo3tgx&ht=tk&f=15928.15930.15931&a=35175569&app=typekit&e=css");
+
+@font-face {
+font-family:"quicksand";
+src:url("https://use.typekit.net/af/bed164/00000000000000003b9b3a21/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/bed164/00000000000000003b9b3a21/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/bed164/00000000000000003b9b3a21/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;
+}
+
+@font-face {
+font-family:"quicksand";
+src:url("https://use.typekit.net/af/57a07d/00000000000000003b9b3a24/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/57a07d/00000000000000003b9b3a24/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/57a07d/00000000000000003b9b3a24/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"quicksand";
+src:url("https://use.typekit.net/af/c7c3d2/00000000000000003b9b3a22/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/c7c3d2/00000000000000003b9b3a22/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/c7c3d2/00000000000000003b9b3a22/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+.tk-quicksand { font-family: "quicksand",sans-serif; }
+/* End Additional Fonts */
+
+
+
 /* @group Body and Layout */
 body {
     background: #3574a6 url("../images/bg-body.jpg") repeat-x 0 0;
@@ -338,6 +380,8 @@ em {
 .style-newspaper { font-family:Georgia,"Times New Roman", Times, serif; background:#fbfbfb; color:#080000; }
 .style-newspaper h1 { text-transform:capitalize; font-family:Georgia, "Times New Roman", Times, serif; }
 .style-newspaper #readInner a { color:#0924e1; }
+.style-quicksand {font-family: quicksand, sans-serif;background-color:#181616;color:#b4b4b4;}
+.style-quicksand #readInner a {color:#5c18c9;}
 .style-novel { font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif; background:#f4eed9; color:#1d1916; }
 .style-novel #readInner a { color:#1856ba; }
 .style-ebook { font-family:Arial, Helvetica, sans-serif; background:#edebe8; color:#2c2d32; }
