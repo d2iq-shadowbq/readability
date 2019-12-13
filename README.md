@@ -2,7 +2,7 @@
 
 See: http://d2iq-shadowbq.github.io/readability/
 
-The bookmarklet is hosted on GH-Pages, so take a look at that branch. 
+The bookmarklet is generated and hosted on GH-Pages. 
 
 ## Original - Arc90
 
